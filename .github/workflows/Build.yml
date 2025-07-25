@@ -1,0 +1,6 @@
+name: Build Java Test
+
+
+jobs:
+  build:
+    - uses: allansouza23/gh-actions-testing/build-java
