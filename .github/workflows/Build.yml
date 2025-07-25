@@ -4,4 +4,6 @@ on: [push, workflow_dispatch]
 
 jobs:
   build:
-    uses: AllanSouza23/gh-actions-testing/build-java@main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: AllanSouza23/gh-actions-testing/build-java@main
