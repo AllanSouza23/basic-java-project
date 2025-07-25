@@ -3,4 +3,6 @@ name: Build Java Test
 
 jobs:
   build:
-    - uses: allansouza23/gh-actions-testing/build-java
+    runs-on: ubuntu-latest
+    steps:
+      - uses: allansouza23/gh-actions-testing/build-java@main
