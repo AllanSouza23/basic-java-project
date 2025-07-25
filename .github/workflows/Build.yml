@@ -6,4 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: AllanSouza23/gh-actions-testing/build-java@main
+      - uses: actions/checkout@v4
+      - name: Build Java 17
+        uses: AllanSouza23/gh-actions-testing/build-java@main
+      - name: Build Java 21
+        uses: AllanSouza23/gh-actions-testing/build-java@main
+        with:
+          java-version: "21"
