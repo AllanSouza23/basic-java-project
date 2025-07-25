@@ -1,5 +1,6 @@
 name: Build Java Test
 
+on: push
 
 jobs:
   build:
